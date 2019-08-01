@@ -32,5 +32,5 @@ The parameters can be very problem specific. In order to change the number of ag
 The code shall start running and it will stop when it has achieved its objective (all agents covering all the landmarks) for 100 episodes straight. 
 
 ## Adaptations 
-[**DDPG**](https://pemami4911.github.io/blog/2016/08/21/ddpg-rl.html) 
+[**DDPG**](https://github.com/stevenpjg/ddpg-aigym)
 [**DQN**](https://github.com/gsurma/cartpole) 
