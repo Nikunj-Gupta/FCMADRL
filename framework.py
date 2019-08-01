@@ -23,6 +23,15 @@ def ca_step(action):
 """ 
 sa_state(): To merge the two states received by the individual agents 
 (one from central agent and one from the environment) into one vector 
+
+Parameters: 
+x = communication message from the central agent 
+obs = local obs 
+i = agent i 
+
+Return Value: 
+Single concatenated vector 
+
 """ 
 def sa_state(x, obs, i): 
 	one = x
