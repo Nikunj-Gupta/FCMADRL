@@ -33,7 +33,7 @@ env = make_env("simple_spread")
 
 #specify parameters here:
 episodes=30000 
-steps=50 
+steps=200 
 CA_OBS_SPACE = env.n 
 CA_ACTION_SPACE = 5 # env.observation_space[0].shape[0] 
 SA_OBS_SPACE = CA_ACTION_SPACE + env.observation_space[0].shape[0] + 1 
