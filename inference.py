@@ -20,6 +20,6 @@ class Inference:
 
 if __name__ == "__main__":
     inf = Inference()
-    inf = Inference(file_name="model5.h5")
+    inf = Inference(file_name="model4.h5")
     tr = inf.model_load()
     print tr
