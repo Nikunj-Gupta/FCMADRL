@@ -93,7 +93,7 @@ class FCMADRL:
 
             for t in xrange(steps):
                 # rendering environment (optional)
-                env.render()
+                #env.render()
                 print "Step: ", t
 
                 x_arr = []
