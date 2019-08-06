@@ -16,6 +16,10 @@ class DQNSolver:
         self.action_space = action_space
         self.memory = deque(maxlen=MEMORY_SIZE)
 
+        self.create_model(observation_space)
+        self.file_path = FILE_PATH_DQN
+
+    def create_model(self, observation_space):
         self.model = Sequential()
         self.model.add(Dense(24, input_shape=(observation_space,), activation="relu"))
         self.model.add(Dense(24, activation="relu"))
@@ -43,5 +47,9 @@ class DQNSolver:
             q_values[0][action] = q_update
             self.model.fit(state, q_values, verbose=0)
         self.exploration_rate *= EXPLORATION_DECAY
-        self.exploration_rate = max(EXPLORATION_MIN, self.exploration_rate)
+        self.exploration_rate = max(EXPLORATION_MIN, self.exploration_rate) 
 
+    def save_dqn_model(self, i=""): 
+        name = self.file_path + "model" + str(i) + ".h5" 
+        self.model.save_weights(name)
+        print "Dqn", self.model
