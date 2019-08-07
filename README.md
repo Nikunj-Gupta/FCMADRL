@@ -38,9 +38,8 @@ from FCMADRL import framework, inference
 * run framework.py using the following command 
 `python framework.py` 
 
-* **Note** If you have docker, you can use the following dockerfile to build the environment to use my code as is. 
-[**Dockerfile**](https://github.com/Nikunj-Gupta/FCMADRL/blob/master/dockerfile) 
-Keep the reuirements.txt along with the dockerfile. 
+* **Note** If you have docker, you can use the [**dockerfile**](https://github.com/Nikunj-Gupta/FCMADRL/blob/master/dockerfile)  to build the environment to use my code as is. 
+Keep the requirements.txt along with the dockerfile. 
 
 
 The code shall start running and it will stop when it has achieved its objective (all agents covering all the landmarks) for 100 episodes straight. 
