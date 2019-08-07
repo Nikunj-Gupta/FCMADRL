@@ -33,14 +33,15 @@ from FCMADRL import framework, inference
 **Papers:** This folder contains an important subset of the papers explored during the thesis. 
 
 ## Running the code 
-If you have docker, you can use the following dockerfile to build the environment to use my code as is. 
-* [**Dockerfile**](https://github.com/Nikunj-Gupta/FCMADRL/blob/master/dockerfile) 
-Keep the reuirements.txt along with the dockerfile. 
-
 * Clone the repository. 
 * Clone the repository of the environment and install it as described in the instructions of the same. 
 * run framework.py using the following command 
 `python framework.py` 
+
+* **Note** If you have docker, you can use the following dockerfile to build the environment to use my code as is. 
+[**Dockerfile**](https://github.com/Nikunj-Gupta/FCMADRL/blob/master/dockerfile) 
+Keep the reuirements.txt along with the dockerfile. 
+
 
 The code shall start running and it will stop when it has achieved its objective (all agents covering all the landmarks) for 100 episodes straight. 
 
