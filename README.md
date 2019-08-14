@@ -12,11 +12,17 @@ Follow the instructions in the following [**here**](https://github.com/openai/mu
 FCMADRL uses only the Cooperative Navigation (simple_spread.py) env from the set of environments in MPE. 
 The parameters can be very problem specific. In order to change the number of agents or landmarks, you must go to *< MPE root directory >/multiagent/scenarios/simple_spread.py* manually. 
 
+## Installation 
+### Using Pip 
+
+`pip install FCMADRL==<version>` 
+
+### Docker 
+
+Use the dockerfile to set up the environment: [**dockerfile**](https://github.com/Nikunj-Gupta/FCMADRL/blob/master/dockerfile) 
 
 ## USAGE 
 
-The package can be downloaded using pip: `pip install FCMADRL==<version>` 
-Small example: 
 ```python
 from FCMADRL import framework, inference
 ``` 
